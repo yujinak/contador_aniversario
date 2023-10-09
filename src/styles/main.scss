@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f9b700;
+  transition: 5s ease;
+
+  &:hover {
+    background-color: rgb(141, 0, 137);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-table {
+  display: table;
+}
+
+.hero {
+  padding: 16vh 5vw;
+  opacity: 100%;
+
+  &__title {
+    display: flex;
+    margin: 0 auto;
+    text-align: start;
+    padding: 16px 50px;
+    align-items: center;
+    font-family: "Abril Fatface", cursive;
+    color: white;
+  }
+
+  &__text {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 32px;
+  }
+}
+
+#contador {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-family: "Abril Fatface", cursive;
+}
+
+.detalhes {
+  &__lista {
+    padding: 0 16vw;
+    list-style: none;
+
+    &__item {
+      padding: 4px 0;
+    }
+
+    &__form {
+      display: flex;
+      border-radius: 16px;
+      justify-content: center;
+      margin: 16px auto;
+      padding: 32px;
+      background-color: cadetblue;
+
+      &__input {
+        margin-right: 8px;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        height: 32px;
+        color: white;
+      }
+
+      &__button {
+        line-height: 32px;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        text-decoration: none;
+        text-wrap: nowrap;
+        width: 100%;
+        border: 1px solid cadetblue;
+        background-color: orange;
+        transition: 1s ease;
+        color: white;
+
+        &:hover {
+          background-color: rgba(95, 158, 160, 0.541);
+          border: 1px solid rgba(255, 255, 255, 0.349);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    &__title {
+      padding: 4vh 8vw;
+    }
+  }
+
+  .container {
+    display: block;
+  }
+
+  .detalhes__lista {
+    padding: 5vw;
+    &__form {
+      display: block;
+
+      &__input {
+        display: block;
+        width: 100%;
+
+        margin-bottom: 8px;
+      }
+
+      &__button {
+        display: block;
+      }
+    }
+  }
+}

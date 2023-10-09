@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+    <title>Meu aniversário</title>
+  </head>
+  <body class="body">
+    <header class="hero hero--gradient">
+      <div class="container">
+        <h1 class="hero__title">Venha comemorar meu aniversário!</h1>
+        <div class="container-table">
+          <p class="hero__text">
+            Olá! Gostaria de te convidar para uma grande festa que vou realizar
+            no dia do meu aniversário! Por favor, confirme sua presença no botão
+            ali embaixo.
+          </p>
+        </div>
+      </div>
+      <h2 id="contador"></h2>
+    </header>
+
+    <section class="detalhes">
+      <ul class="detalhes__lista">
+        <li class="detalhes__lista__item">
+          <b>Data:</b> <span id="data-aniversario"></span>
+        </li>
+        <li class="detalhes__lista__item">
+          <b>Local:</b> <span>Salão de festas "Grand Royale"</span>
+        </li>
+        <li class="detalhes__lista__item">
+          <b>Endereço:</b>
+          <span>Rua Mariano Bastille, 1234 - Bairro Central, Cidade</span>
+        </li>
+        <li class="detalhes__lista__form">
+          <input
+            type="text"
+            placeholder="Nome completo"
+            class="detalhes__lista__form__input"
+          />
+          <a href="#" class="detalhes__lista__form__button"
+            >Confirmar minha presença!</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
